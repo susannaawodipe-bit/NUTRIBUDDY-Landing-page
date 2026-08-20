@@ -8,7 +8,6 @@
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -16,7 +15,6 @@ body {
     color: #333;
 }
 
-/* Navigation */
 nav {
     background-color: #2563eb;
     display: flex;
@@ -49,9 +47,8 @@ nav ul li a:hover {
     color: #dbeafe;
 }
 
-/* Hero Section */
 .hero {
-    background: linear-gradient(to right, #8caffa, #b395e7);
+    background: linear-gradient(to right, #1d52c4, #5c27b6);
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -70,7 +67,6 @@ nav ul li a:hover {
     font-size: 18px;
 }
 
-/* Button */
 .btn {
     display: inline-block;
     background: white;
@@ -86,7 +82,6 @@ nav ul li a:hover {
     background: #dbeafe;
 }
 
-/* General Sections */
 section {
     padding: 50px 10%;
 }
@@ -104,19 +99,16 @@ section p {
     margin: auto;
 }
 
-/* About Section */
 #about {
     background-color: #f0f7ff;
     box-shadow: inset 0 5px 20px rgba(37, 99, 235, 0.08);
     padding-bottom: 0;
 }
 
-/* Our Features Heading */
 #about h2:nth-of-type(2) {
     margin-top: 35px;
 }
 
-/* Features */
 .features {
     display: flex;
     gap: 20px;
@@ -145,7 +137,6 @@ section p {
     margin-bottom: 15px;
 }
 
-/* SDG Section */
 .sdg {
     text-align: center;
     background-color: #dbeafe;
@@ -155,7 +146,6 @@ section p {
     padding: 35px 10%;
 }
 
-/* Join Section */
 #join {
     background-color: #add1fc;
     box-shadow: inset 0 5px 15px rgba(30, 58, 138, 0.15);
@@ -166,7 +156,6 @@ section p {
     color: #1e3a8a;
 }
 
-/* Contact Section */
 #contact {
     text-align: center;
     background-color: #93c5fd;
@@ -178,7 +167,6 @@ section p {
     color: #1e3a8a;
 }
 
-/* Footer */
 footer {
     background-color: #1e3a8a;
     color: white;
