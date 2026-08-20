@@ -1,0 +1,394 @@
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #334155;
+    background-color: #eaf4ff;
+}
+
+header {
+    background-color: #1e3a8a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+.hero {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1e3a8a
+    );
+    color: white;
+}
+.hero-text h1 {
+    font-size: 64px;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+.hero-text p {
+    font-size: 22px;
+}
+
+#about {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 45px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.12);
+}
+#about h2 {
+    color: #1e3a8a;
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-top: 35px;
+    border-left: 5px solid #2563eb;
+    padding-left: 15px;
+}
+#about h2:first-child {
+    margin-top: 0;
+}
+#about h3 {
+    color: #2563eb;
+    font-size: 21px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+#about p {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+#about strong {
+    color: #2563eb;
+}
+#about > p {
+    background-color: #eaf4ff;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.18);
+    margin-bottom: 18px;
+}
+
+.SDG {
+    background-color: #eaf4ff;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.18);
+    margin-top: 10px;
+}
+
+.Skills {
+    background-color: #eaf4ff;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.18);
+    margin-top: 10px;
+}
+.Skills ul {
+    padding-left: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.Skills ul li {
+    margin-bottom: 8px;
+}
+.Skills ul li::marker {
+    color: #2563eb;
+}
+
+.projects {
+    background-color: #eaf4ff;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.18);
+    margin-top: 10px;
+}
+.projects h3 {
+    color: #1e3a8a;
+    margin-top: 20px;
+}
+.projects h3:first-child {
+    margin-top: 0;
+}
+.projects p {
+    margin-bottom: 20px;
+}
+
+#contact {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 45px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1e3a8a
+    );
+
+    color: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.2);
+}
+#contact h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#contact p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+#contact a {
+    color: #dbeafe;
+    font-weight: bold;
+    text-decoration: none;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #172554;
+    color: white;
+
+    text-align: center;
+    padding: 25px 15px;
+
+    margin-top: 60px;
+}
+footer p {
+    font-size: 15px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        padding: 10px 18px;
+    }
+    nav ul {
+        gap: 8px;
+    }
+    nav ul li a {
+        font-size: 14px;
+        padding: 7px 8px;
+    }
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+    .hero {
+        min-height: 300px;
+    }
+    .hero-text h1 {
+        font-size: 45px;
+    }
+    .hero-text p {
+        font-size: 18px;
+    }
+    #about,
+    #contact {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+    #about h2,
+    #contact h2 {
+        font-size: 24px;
+    }
+    .SDG,
+    .Skills,
+    .projects {
+        padding: 20px;
+    }
+}
+
+</style>
+<body>
+<header>
+    <nav>
+        <img src="Profile picture.png" alt="Profile Picture" class="logo" width="100">
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+
+    <div class="hero-text">
+        <h1>Portfolio</h1>
+        <p>Hi! I'm Susanna, a web developer.</p>
+    </div>
+
+</section>
+    <section id="about">
+        <h2>Introduction</h2>
+        <p>
+            Hello! My name is <strong>Awodipe Susanna</strong>.
+            I am a student who is passionate about technology, nutrition, creativity, and learning new skills. 
+            I am passionate about learning new things, especially technology and web development. 
+            I enjoy creating websites and improving my programming skills.
+        </p>
+        
+
+        <h2>My SDG Focus – Goal 3: Good Health and Well-being</h2>
+        <div class="SDG Focus">
+         <p> 
+         SDG 3 aims to ensure healthy lives and promote
+         well-being for people of all ages. It focuses on
+         improving healthcare, preventing diseases, and
+         making healthcare services more accessible.
+         </p>
+
+         <p>
+         I chose this goal because good health is important
+         for everyone to live a happy and productive life.
+         As someone interested in nutrition, I believe that
+         technology and health awareness can help people
+         make better choices and contribute to healthier
+         communities.
+         </p>
+
+        </div>
+        
+        <h2>My Digital Skills</h2>
+        <div class="Skills">
+        
+            <p>
+                I develop different digital skills through my
+                coding and entrepreneurship program. Some of the skills
+                I have learned include:
+            </p>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>GitHub</li>
+                <li>Visual Studio Code</li>
+                <li>Canva</li>
+                <li>Microsoft Word</li>
+                <li>Microsoft PowerPoint</li>
+                <li>Microsoft Excel</li>
+            </ul>
+
+        </div>
+
+     <h2>My Projects</h2>
+        <div class="projects">
+
+            <h3>1. NutriBuddy Landing Page</h3>
+
+            <p>
+                NutriBuddy is a nutrition-focused project designed to
+                promote healthy eating and nutrition awareness. I worked
+                on the landing page using HTML and CSS and explored
+                website design, navigation, branding, and content.
+            </p>
+
+            <h3>2. About Me Website</h3>
+
+            <p>
+                I created a personal website to introduce myself,
+                share my interests, and practice my HTML and CSS skills.
+                This project helped me understand how webpages are
+                structured and styled.
+            </p>
+
+            <h3>3. Personal Portfolio</h3>
+
+            <p>
+                This portfolio website showcases my introduction,
+                skills, projects, SDG focus, and contact information.
+                It demonstrates what I have learned about web development
+                and website design.
+            </p>
+        </div>
+    </section>
+
+</div>
+<section id="contact">
+    
+    <h2>Contact Us</h2>
+ <p>
+   I would love to connect with you! If you have any
+   questions, suggestions, or opportunities to collaborate,
+   feel free to reach out.
+    <br>
+    Email: <a href="mailto:info@susanna.com">info@susanna.com</a>
+    <br>
+    Phone: +234 246 675 3323
+    <br>
+    Address: 123 Healthy Lane, Wellness City, Country
+ </p>
+</section> 
+
+</main>
+
+<footer>
+
+    <p>© 2026 Portfolio | SDG 3 - Good Health and Well-being</p>
+
+</footer>
+
+</body>
+</html>
+
