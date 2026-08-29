@@ -2,6 +2,7 @@
     width: 150px;
     height: auto;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -11,17 +12,17 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #eaf4ff;
+    background-color: #f8fff8;
     color: #333;
 }
 
 nav {
-    background-color: #2563eb;
+    background-color: #2e7d32;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25);
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.25);
 }
 
 nav h2 {
@@ -44,15 +45,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #dbeafe;
+    color: #c8e6c9;
 }
 
 .hero {
-    background: linear-gradient(to right, #1d52c4, #5c27b6);
+    background: linear-gradient(to right, #4caf50, #81c784);
     color: white;
     text-align: center;
     padding: 100px 20px;
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.25);
 }
 
 .hero h1 {
@@ -70,16 +71,16 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     background: white;
-    color: #1e3a8a;
+    color: #2e7d32;
     padding: 12px 30px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(30, 58, 138, 0.2);
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.2);
 }
 
 .btn:hover {
-    background: #dbeafe;
+    background: #e8f5e9;
 }
 
 section {
@@ -89,7 +90,7 @@ section {
 section h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #1e3a8a;
+    color: #2e7d32;
     font-size: 2rem;
 }
 
@@ -100,8 +101,8 @@ section p {
 }
 
 #about {
-    background-color: #f0f7ff;
-    box-shadow: inset 0 5px 20px rgba(37, 99, 235, 0.08);
+    background-color: #f8fff8;
+    box-shadow: inset 0 5px 20px rgba(76, 175, 80, 0.08);
     padding-bottom: 0;
 }
 
@@ -123,54 +124,54 @@ section p {
     padding: 25px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(30, 58, 138, 0.15);
+    box-shadow: 0 5px 15px rgba(46, 125, 50, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.25);
 }
 
 .card h3 {
-    color: #1e3a8a;
+    color: #2e7d32;
     margin-bottom: 15px;
 }
 
 .sdg {
     text-align: center;
-    background-color: #dbeafe;
-    box-shadow: inset 0 5px 15px rgba(37, 99, 235, 0.15);
+    background-color: #e8f5e9;
+    box-shadow: inset 0 5px 15px rgba(76, 175, 80, 0.15);
     width: 100vw;
     margin-left: -10vw;
     padding: 35px 10%;
 }
 
 #join {
-    background-color: #add1fc;
-    box-shadow: inset 0 5px 15px rgba(30, 58, 138, 0.15);
+    background-color: #c8e6c9;
+    box-shadow: inset 0 5px 15px rgba(46, 125, 50, 0.15);
     padding: 55px 10%;
 }
 
 #join h2 {
-    color: #1e3a8a;
+    color: #2e7d32;
 }
 
 #contact {
     text-align: center;
-    background-color: #93c5fd;
-    box-shadow: inset 0 5px 15px rgba(30, 58, 138, 0.15);
+    background-color: #a5d6a7;
+    box-shadow: inset 0 5px 15px rgba(46, 125, 50, 0.15);
     padding: 55px 10%;
 }
 
 #contact h2 {
-    color: #1e3a8a;
+    color: #2e7d32;
 }
 
 footer {
-    background-color: #1e3a8a;
+    background-color: #2e7d32;
     color: white;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 -4px 12px rgba(30, 58, 138, 0.2);
+    box-shadow: 0 -4px 12px rgba(46, 125, 50, 0.2);
 }
